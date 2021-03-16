@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cálculo de la letra del DNI">
+    <title>Cálculo DNI</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <h1>Calcular Letra del DNI</h1>
+    <p class="mostrar-letra off"></p>
+    <h3 class="validar-letra off"></h3>
+    <form class="formulario-dni">
+        <label for="numero">Número DNI:</label>
+        <input type="text" id="numero" value="" pattern="[0-9]{8}" maxlength="8" required>
+        <label for="letra">Letra DNI:</label>
+        <input type="text" id="letra" value="" pattern="[a-z, A-Z]{1}" maxlength="1" required>
+        <button id="boton-enviar" type="submit" onclick="botonEnviar(); return false">Enviar</button>
+        <button id="boton-validar" type="submit" onclick="botonValidar(); return false">Validar</button>
+
+    </form>
+</body>
+
+</html>
